@@ -1,2 +1,2 @@
 # zenith 
-A UBUNTU-BASED DISTRO FOR CODING 💻🧑‍💻!
+AN UBUNTU-BASED DISTRO FOR CODING 💻🧑‍💻!
