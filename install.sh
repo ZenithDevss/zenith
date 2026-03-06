@@ -13,4 +13,6 @@ sudo snap install nvim --classic
 # Crea link simbolico per configurazione neovim
 ln -s ~/zenith/nvim ~/.config/nvim
 
+echo "bash ~/zenith/welcome.sh" >> ~/.bashrc
+
 echo "Fatto!"
