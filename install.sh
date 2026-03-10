@@ -19,9 +19,9 @@ sudo apt update
 sudo apt install -y fastfetch
 
 # Crea link simbolico per configurazioni varie
-ln -s ~/zenith/nvim ~/.config/nvim
-ln -s ~/zenith/fastfetch ~/.config/fastfetch
-
-echo "bash ~/zenith/welcome.sh" >>~/.bashrc
+[ ! -L ~/.config/nvim ] && ln -s ~/zenith/nvim ~/.config/nvim
+[ ! -L ~/.config/fastfetch ] && ln -s ~/zenith/fastfetch ~/.config/fastfetch
+# Controlla che il file welcome non sia in .bashrc e lo aggiunge
+grep -q "welcome.sh" ~/.bashrc || echo "bash ~/zenith/welcome.sh" >>~/.bashrc
 
 echo "Fatto!"
